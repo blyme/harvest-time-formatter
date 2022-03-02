@@ -1,7 +1,7 @@
 {
     "name": "Harvest time formatter",
     "description": "Format decimal time in Harvest to HH:MM",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "manifest_version": 3,
     "permissions": [
         "activeTab"
@@ -9,7 +9,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://reload.harvestapp.com/reports/detailed?*"
+                "https://reload.harvestapp.com/reports*"
             ],
             "css": [
                 "style.css"

@@ -20,7 +20,13 @@ function convert() {
             return;
         }
 
-        let toFloat = parseFloat(entry.innerText.replace(",", "."));
+        const toFloat = parseFloat(entry.innerText.replace(",", "."));
+
+        if (entry.querySelector("a")) {
+            entry.querySelector("a").innerHTML += ` / ${minTommss(toFloat)}`;
+            return;
+        }
+
         entry.innerHTML += ` / ${minTommss(toFloat)}`;
     });
 }
